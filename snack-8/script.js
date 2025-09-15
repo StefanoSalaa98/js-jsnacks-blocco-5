@@ -22,8 +22,8 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-const studenteMarco = students.filter(student => student.name === "Marco Lanci");
-//il metodo .filter restituisce un nuovo array
-const nome = studenteMarco[0].name;
-const classe = studenteMarco[0].class;
+const studenteMarco = students.find(student => student.name === "Marco Lanci");
+//il metodo .filter restituisce un nuovo array 
+const nome = studenteMarco.name;
+const classe = studenteMarco.class;
 console.log("La classe di" ,nome, "é" ,classe);
